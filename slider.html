@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>3 Column Layout</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <script>
+        window.onload = function() {
+            // ви можете зробити скільки завгодно слайдів
+            let slides = [
+
+                {
+                    title: "YouTube",
+                    background: "assets/img/2230e0240f0c5185658d7591b3e49fdb.jpg",
+                    link: "https://www.youtube.com"
+                }, {
+                    title: "Twitter",
+                    background: "assets/img/1da1f2.png",
+                    link: "https://twitter.com"
+                }, {
+                    title: "Yahoo",
+                    background: "assets/img/4a00a0.png",
+                    link: "http://yahoo.com"
+                }
+            ]
+            Slider.initSlider(slides);
+
+        };
+
+    </script>
+
+</head>
+
+<body>
+<header class="header">
+    <img class="logo" src="./assets/img/zzz.jpg">
+</header>
+<div class="container">
+    <main class="center column">
+        <h1>Slider</h1>
+        <div id="slider">
+
+        </div>
+        <div class="slider-indexes">
+
+        </div>
+        <div class="buttons">
+            <button class="prevBtn">Previous</button>
+            <button class="showBtn">Show</button>
+            <button class="slideshow">Stoped</button>
+            <button class="hideBtn">Hide</button>
+            <button class="nextBtn">Next</button>
+        </div>
+        <article>
+
+            <p></p>
+        </article>
+    </main>
+    <nav class="left column">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="slider.html">Slider</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
+    </nav>
+    <div class="right column">
+        <h3>Right heading</h3>
+        <p></p>
+    </div>
+    <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+    <footer class="footer">
+        <img class="logo" src="./assets/img/zzz.jpg">
+    </footer>
+</div>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
